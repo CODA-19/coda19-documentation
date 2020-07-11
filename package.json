@@ -1,5 +1,5 @@
 {
-  "name": "CODA-19 documentation",
+  "name": "documentation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,13 @@
   "author": "Louis Mullie",
   "license": "ISC",
   "devDependencies": {
-    "gitbook-plugin-theme-finger": "0.0.1",
+    "gitbook-plugin-theme-bandwidth": "^1.9.14",
+    "gitbook-plugin-theme-busbud": "^1.0.1",
+    "gitbook-plugin-theme-default": "^1.0.7",
+    "gitbook-plugin-theme-vuejs": "^1.1.0",
     "honkit": "^3.5.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-theme-finger": "0.0.1"
   }
 }
