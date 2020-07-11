@@ -1,0 +1,3 @@
+# Data security
+
+This document outlines the data security policies governing the use of CODA-19, a platform for decentralized, privacy-preserving analysis of data on patients with suspected or confirmed COVID-19 at 8 hospital sites in Québec and 1 in Ontario. The overarching principle of the CODA-19 project is that no individual patient data will be exchanged between hospital sites The objective of this document is to document the procedures that will be deployed in order to protect confidential patient information across all aspects of the CODA-19 project. 

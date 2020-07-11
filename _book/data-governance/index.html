@@ -1,0 +1,423 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Data governance · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.5.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-gitbook-plugin-theme-finger/finger.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../data-security/formal-audit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../data-structure/">
+            
+                <a href="../data-structure/">
+            
+                    
+                    Data structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../data-structure/feedback_please.md">
+            
+                <span>
+            
+                    
+                    Fields collected
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../data-structure/better_tools.md">
+            
+                <span>
+            
+                    
+                    FHIR mappings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../data-security/">
+            
+                <a href="../data-security/">
+            
+                    
+                    Data security
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../data-security/definitions.html">
+            
+                <a href="../data-security/definitions.html">
+            
+                    
+                    Definitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../data-security/access-control.html">
+            
+                <a href="../data-security/access-control.html">
+            
+                    
+                    Access control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../data-security/data-in-transit.html">
+            
+                <a href="../data-security/data-in-transit.html">
+            
+                    
+                    Data in transit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../data-security/data-at-rest.html">
+            
+                <a href="../data-security/data-at-rest.html">
+            
+                    
+                    Data at rest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../data-security/application-security.html">
+            
+                <a href="../data-security/application-security.html">
+            
+                    
+                    Application security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../data-security/formal-audit.html">
+            
+                <a href="../data-security/formal-audit.html">
+            
+                    
+                    Formal audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Data governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data governance</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="legal-and-governance">Legal and governance</h1>
+<h2 id="propri&#xE9;t&#xE9;">Propri&#xE9;t&#xE9;</h2>
+<p>Les donn&#xE9;es ont &#xE9;t&#xE9; obtenues gr&#xE2;ce &#xE0; une collaboration &#xE9;troite entre les investigateurs principaux de CODA-19. Puisque chaque institution est responsable de l&#x2019;extraction et de la collecte des donn&#xE9;es dans son &#xE9;tablissement, et que la banque sera stock&#xE9;e de fa&#xE7;on distribu&#xE9;e dans chacun des &#xE9;tablissements, chaque institution demeure propri&#xE9;taire de son sous-ensemble de donn&#xE9;es et peut proc&#xE9;der aux analyses d&#xE9;sir&#xE9;es et approuv&#xE9;es par son institution sur son sous-ensemble. L&#x2019;&#xE9;tablissement de rattachement des chercheurs et les chercheurs principaux resteront propri&#xE9;taires de tout mat&#xE9;riel acquis ou produit dans le cadre de cette banque.</p>
+<p>Dans les situations o&#xF9; une &#xE9;quipe de recherche d&#xE9;sire effectuer des travaux &#xE0; l&#x2019;aide de donn&#xE9;es provenant de plus d&#x2019;un centre, un r&#xE9;sum&#xE9; du projet devra &#xEA;tre soumis au comit&#xE9; de gouvernance qui devra approuver l&#x2019;utilisation des donn&#xE9;es multicentriques. La demande devra &#xEA;tre d&#xE9;taill&#xE9;e au plan m&#xE9;thodologique et devra planifier les co&#xFB;ts d&#x2019;extraction et de manipulation des donn&#xE9;es qui seront associ&#xE9;es &#xE0; l&#x2019;acc&#xE8;s &#xE0; la banque. </p>
+<h2 id="instances-de-gouvernance-et-de-gestion">Instances de gouvernance et de gestion</h2>
+<p>Les instances impliqu&#xE9;es dans la gouvernance et la gestion de la banque seront les chercheurs principaux de la banque.</p>
+<h3 id="chercheurs">Chercheurs</h3>
+<p>Les chercheurs principaux auront les responsabilit&#xE9;s suivantes:</p>
+<p>&#xC9;tablir des r&#xE8;gles de fonctionnement en conformit&#xE9; avec le cadre de gestion des donn&#xE9;es propre &#xE0; chaque &#xE9;tablissement;
+S&#x2019;assurer que les r&#xE8;gles et proc&#xE9;dures &#xE9;nonc&#xE9;es dans le pr&#xE9;sent cadre et toute politique ou ligne directrice &#xE9;labor&#xE9;e par les sites participants soient respect&#xE9;es;
+D&#xE9;finir les orientations et priorit&#xE9;s de d&#xE9;veloppement de COVIDB;
+Autoriser les acc&#xE8;s &#xE0; la banque pour leur site.</p>
+<h3 id="responsabilit&#xE9;s-des-sites">Responsabilit&#xE9;s des sites</h3>
+<p>Le projet CODA-19 est d&#xE9;velopp&#xE9; dans le cadre d&#x2019;un partenariat avec les &#xE9;tablissements de sant&#xE9; identifi&#xE9;s. Les sites auront les responsabilit&#xE9;s suivantes :</p>
+<p>Soutenir les activit&#xE9;s de collecte et d&#x2019;extraction des donn&#xE9;es n&#xE9;cessaires pour alimenter la banque;
+Encadrer au plan l&#xE9;gal, &#xE9;thique et confidentialit&#xE9; la gestion des donn&#xE9;es pour leur site;
+Encadrer la gestion des ressources humaines n&#xE9;cessaires &#xE0; l&#x2019;extraction des donn&#xE9;es et au maintien de l&#x2019;infrastructure de donn&#xE9;es;
+Promouvoir l&#x2019;utilisation des r&#xE9;sultats des analyses de donn&#xE9;es de la banque &#xE0; des fins d&#x2019;am&#xE9;lioration des pratiques.</p>
+<h3 id="coordination-de-la-banque">Coordination de la banque</h3>
+<p>La coordination des activit&#xE9;s de CODA-19 sera assur&#xE9;e par un/une coordonnatrice &#xE0; la recherche d&#xE9;sign&#xE9;e par les chercheurs principaux. Elle aura pour fonctions de
+G&#xE9;rer les demandes des utilisateurs (recevoir les demandes d&#x2019;acc&#xE8;s; s&apos;assurer que les demandes d&#x2019;acc&#xE8;s sont &#xE9;valu&#xE9;es selon le cadre de gestion; informer les utilisateurs des d&#xE9;cisions relatives &#xE0; leurs demandes; guider les utilisateurs quant aux proc&#xE9;dures d&#x2019;acc&#xE8;s;
+Assurer les liens entre les sites;
+Assurer les liaisons avec les comit&#xE9;s d&#x2019;&#xE9;thique;
+Veiller au respect de la confidentialit&#xE9; des informations, des donn&#xE9;es et de la s&#xE9;curit&#xE9; de la banque;
+Veiller au respect, par les utilisateurs de la banque, des r&#xE8;gles inscrites dans ce cadre de gestion;
+Assurer un suivi de l&#x2019;utilisation des donn&#xE9;es</p>
+<h2 id="financement-de-coda-19">Financement de CODA-19</h2>
+<p>Le d&#xE9;veloppement CODA-19 est assur&#xE9; gr&#xE2;ce &#xE0; des fonds de recherche discr&#xE9;tionnaires des chercheurs principaux et est partiellement support&#xE9; par:</p>
+<ul>
+<li>Une bourse de d&#xE9;marrage IVADO (Chass&#xE9;)</li>
+<li>Une bourse du R&#xE9;seau Qu&#xE9;b&#xE9;cois de Bioinformatique</li>
+<li>Instituts de recherche en sant&#xE9; du Canada (IRSC)</li>
+</ul>
+<p>Cependant, &#xE0; la fin de la subvention et de la phase de d&#xE9;veloppement, l&#x2019;exploitation de CODA-19 impliquera des co&#xFB;ts li&#xE9;s au salaire de la coordination de la banque, l&#x2019;optimisation continue des infrastructures de donn&#xE9;es, l&#x2019;analyse des donn&#xE9;es et le soutien. Pour les chercheurs principaux, ces frais seront imput&#xE9;s &#xE0; des subventions de recherche en cours ou &#xE0; venir. Pour les autres utilisateurs, les demandes d&#x2019;acc&#xE8;s aux donn&#xE9;es et de services sont sujettes &#xE0; un recouvrement de co&#xFB;ts des op&#xE9;rations.</p>
+<h2 id="changement-de-vocation-vente-fusion-ou-transfert-de-la-banque">Changement de vocation, vente, fusion ou transfert de la banque</h2>
+<p>Les donn&#xE9;es ne pourront &#xEA;tre utilis&#xE9;es &#xE0; des fins autres que des activit&#xE9;s de recherche et d&#x2019;am&#xE9;lioration de la qualit&#xE9; reli&#xE9;s &#xE0; la pand&#xE9;mie de COVID19. Toute proc&#xE9;dure visant &#xE0; changer la vocation de la banque devra faire l&#x2019;objet d&#x2019;une autorisation formelle des instances suivantes:</p>
+<ul>
+<li>le comit&#xE9; de gouvernance de la banque</li>
+<li>les &#xE9;tablissements d&#x2019;attache des chercheurs principaux pour chacune des sous-ensembles de CODA-19</li>
+<li>le comit&#xE9; d&#x2019;&#xE9;thique de la recherche du CHUM, qui agit en tant que Comit&#xE9; d&#x2019;&#xC9;thique &#xE0; la Recherche &#xE9;valuateur.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../data-security/formal-audit.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Formal audit">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data governance","level":"1.4","depth":1,"previous":{"title":"Formal audit","level":"1.3.6","depth":2,"path":"data-security/formal-audit.md","ref":"data-security/formal-audit.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["gitbook-plugin-theme-finger","livereload"],"pluginsConfig":{"gitbook-plugin-theme-finger":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"data-governance/README.md","mtime":"2020-07-11T00:29:32.373Z","type":"markdown"},"gitbook":{"version":"3.5.2","time":"2020-07-11T00:36:28.803Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

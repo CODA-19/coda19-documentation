@@ -1,0 +1,16 @@
+{
+  "name": "CODA-19 documentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "Louis Mullie",
+  "license": "ISC",
+  "devDependencies": {
+    "gitbook-plugin-theme-finger": "0.0.1",
+    "honkit": "^3.5.2"
+  }
+}
