@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2020-07-16T21:43:16.394Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="sQkj2Ryg08sOza3CLD4w" version="13.3.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-07-16T22:12:55.142Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="ExSsYFJGd10dY4Xu1oj0" version="13.3.5" type="github">
   <diagram id="-fHXlF8OxmskdNQfDB3m" name="Page-1">
     <mxGraphModel dx="943" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qyHEqkBaGVOl59AJigyV-27" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1000" width="840" height="280" as="geometry" />
+        </mxCell>
         <mxCell id="qyHEqkBaGVOl59AJigyV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-8" target="qyHEqkBaGVOl59AJigyV-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -25,7 +28,10 @@
         <mxCell id="qyHEqkBaGVOl59AJigyV-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="680" width="840" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="qyHEqkBaGVOl59AJigyV-13" value="&amp;nbsp; &amp;nbsp;Binary variables" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="qyHEqkBaGVOl59AJigyV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-13" target="qyHEqkBaGVOl59AJigyV-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-13" value="&lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;b&gt;Binary variables&lt;br&gt;&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;count_nonzero()&lt;br&gt;&amp;nbsp; &amp;nbsp;count_zero()" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="89.5" y="790" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="qyHEqkBaGVOl59AJigyV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-18" target="qyHEqkBaGVOl59AJigyV-5">
@@ -40,11 +46,29 @@
         <mxCell id="qyHEqkBaGVOl59AJigyV-22" value="&lt;span style=&quot;font-size: 19px&quot;&gt;CODA-19 computation node&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="207.5" y="690" width="505" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="qyHEqkBaGVOl59AJigyV-25" value="&amp;nbsp; &amp;nbsp;Categorical variables&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="350" y="790" width="240" height="140" as="geometry" />
+        <mxCell id="qyHEqkBaGVOl59AJigyV-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-25" target="qyHEqkBaGVOl59AJigyV-30">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qyHEqkBaGVOl59AJigyV-26" value="&amp;nbsp; &amp;nbsp;Continuous variables&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="qyHEqkBaGVOl59AJigyV-25" value="&lt;b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;Categorical variables&lt;/b&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;mode()" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="348" y="790" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-26" target="qyHEqkBaGVOl59AJigyV-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-26" value="&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;b&gt;&amp;nbsp;Continuous variables&lt;/b&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;median()&lt;br&gt;&amp;nbsp; &amp;nbsp;mean()&lt;br&gt;&amp;nbsp; &amp;nbsp;interquartile_range()&lt;br&gt;&amp;nbsp; &amp;nbsp;95percent_ci()" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="610" y="790" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-29" value="&lt;span style=&quot;font-size: 19px&quot;&gt;CODA-19 dashboard&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="207.5" y="1220" width="505" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-30" value="&amp;nbsp; &amp;nbsp;&lt;b&gt;Categorical variables&lt;br&gt;&lt;/b&gt;&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect measure: RR | OR | RD&lt;br&gt;&amp;nbsp; &amp;nbsp;Algorithm: MH | IV&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect models: fixed | random&amp;nbsp;&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="348" y="1060" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-31" value="&amp;nbsp; &amp;nbsp;&lt;b&gt;Binary variables&lt;br&gt;&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect measure: RR | OR | RD&lt;br&gt;&amp;nbsp; &amp;nbsp;Algorithm: MH | IV&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect models: fixed | random&amp;nbsp;&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="89.5" y="1060" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-32" value="&amp;nbsp; &amp;nbsp;&lt;b&gt;Continuous variables&lt;br&gt;&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect measure: MD | SMD&lt;br&gt;&amp;nbsp; &amp;nbsp;Algorithm: IV&lt;br&gt;&amp;nbsp; &amp;nbsp;Effect models: fixed | random&amp;nbsp;&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1060" width="240" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
