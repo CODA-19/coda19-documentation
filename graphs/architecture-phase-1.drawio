@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2020-07-16T20:15:48.118Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="KtgBLI_VfXiBhf0hGhsN" version="13.3.5" type="github"><diagram id="-fHXlF8OxmskdNQfDB3m" name="Page-1">ddHBDsIgDADQr+HOIFPvc+rF0w6eyaiDhK0Lwwz9erfAnGR6IeW1UFIIL1p/tqJXV5RgCKPSE34kjOWcTesMzwi7fYDGahkoW6HSL4hIoz60hCEpdIjG6T7FGrsOapeYsBbHtOyOJu3aiwY2UNXCbPWmpVNBDzld/QK6UUvnjMZMK5biCIMSEscv4iXhhUV0IWp9AWae3TKXcO70J/t5mIXO/TgwBevd0yb5IF6+AQ==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-07-16T21:43:16.394Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="sQkj2Ryg08sOza3CLD4w" version="13.3.5" type="github">
+  <diagram id="-fHXlF8OxmskdNQfDB3m" name="Page-1">
+    <mxGraphModel dx="943" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qyHEqkBaGVOl59AJigyV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-8" target="qyHEqkBaGVOl59AJigyV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-8" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="560" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-1" value="FHIR&lt;br&gt;Object&lt;br&gt;Storage&lt;br&gt;(FHIRBase)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="89.5" y="425" width="100" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-4" target="qyHEqkBaGVOl59AJigyV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-4" value="FHIR JSON&lt;br&gt;export&lt;br&gt;(tabular data)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="79.5" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-5" value="Binary&amp;nbsp;&lt;br&gt;Object&lt;br&gt;Storage&lt;br&gt;(Minio)" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="425" width="100" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="840" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-13" value="&amp;nbsp; &amp;nbsp;Binary variables" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="89.5" y="790" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qyHEqkBaGVOl59AJigyV-18" target="qyHEqkBaGVOl59AJigyV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-18" value="HDF5 file&lt;br&gt;export&lt;br&gt;(pixel/signals)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-20" value="&lt;font style=&quot;font-size: 19px&quot;&gt;CODA-19 &lt;br&gt;storage node&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="390" width="170" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-22" value="&lt;span style=&quot;font-size: 19px&quot;&gt;CODA-19 computation node&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="207.5" y="690" width="505" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-25" value="&amp;nbsp; &amp;nbsp;Categorical variables&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="350" y="790" width="240" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="qyHEqkBaGVOl59AJigyV-26" value="&amp;nbsp; &amp;nbsp;Continuous variables&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="610" y="790" width="240" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
