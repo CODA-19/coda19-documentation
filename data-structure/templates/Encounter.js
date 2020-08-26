@@ -3,11 +3,31 @@
   // The type of resource
   "resourceType" : "Encounter",
   
-  // Identifier. No special coding system.
+  // Identifier at the resource level. Required to bulk-upload the ndjson to Aidbox successfully. 
   "id": "some-encounter-id",
+  
+  // An identifier for this encounter
+  "identifier" : [{
+    // Indicate that this ID is a medical record number
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+		  // Visit number - to be confirmed if this is the correct category
+          "code": "VN"
+        }
+      ]
+    },
+	
+	 // The episode number id
+    "value" : "453265624",
     
-  // The status of the encounter
-  "status": "in-progress",
+    // The organization assigning the ID
+    "assigner" : {
+      "reference" : "CHUM",
+      "type" : "Organization"
+    }
+  }],
   
   // The type of the encounter
   "class": {
@@ -19,6 +39,12 @@
   "subject": {
     "reference": "Patient/24235135"
   },
+  
+  "reasonCode": [
+	{
+	  "text": "This patient was hospitalized for Condition X"
+	}
+  ],
   
   "period": {
     "start": "YYYY-MM-DDThh:mm:ss+zz:zz",

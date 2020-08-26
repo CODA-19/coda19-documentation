@@ -3,6 +3,9 @@
   // The type of resource
   "resourceType" : "Patient",
   
+  // Each resource entry has a unique id. This needs to be present for the bulk import to Aidbox to work
+  "id": "pat1",
+
   // An identifier for this patient
   "identifier" : [{
     // Indicate that this ID is a medical record number
@@ -24,15 +27,6 @@
       "type" : "Organization"
     }
   }],
-  
-  // The patient's name
-  "name" : [
-    {
-      "text" : "Boris Macdonald", // Full name
-      "family" : "Macdonald", // Surname
-      "given" : ["Boris"] // First name
-    }  
-  ], 
   
   // The gender of the individual 
   "gender" : { 
