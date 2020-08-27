@@ -3,6 +3,9 @@
   // The type of resource
   "resourceType" : "Observation",
   
+  // Each resource entry needs a unique id for the ndjson bulk upload. 
+  "id": "f002",
+  
   // The status of the observation
   "status": "final",
   
@@ -14,12 +17,12 @@
     "reference": "Patient/3294843"
   },
   
-  // Clinical episode associated with the observation
+  // Clinical episode associated with the observation (if possible) 
   "encounter": {
     "reference": "Encounter/2314234"
   },
   
-  // LOINC code for the observation that was made
+  // LOINC code for the observation that was made (LOINC "code" field to be omitted until coding/categorization completed)
   "code": {
     "coding": [
       {
@@ -31,7 +34,7 @@
     "text": "Systolic blood pressure"
   },
   
-  // SNOMED code for the body site used 
+  // SNOMED code for the body site used (SNOMED "code" field to be omitted until coding/categorization completed)
   "bodySite": {
     "coding": [
       {
