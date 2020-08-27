@@ -6,15 +6,6 @@
   // Each resource entry needs a unique id for the ndjson bulk upload. 
   "id": "f002",
   
-  // Lab test code 
-  "identifier": [
-	  {
-		  "use": "official",
-		  "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
-		  "value": "6324"
-	  }
-	],  
-
   // The status of the observation
   "status": "final",
   
