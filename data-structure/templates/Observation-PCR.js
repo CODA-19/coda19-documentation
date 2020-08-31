@@ -49,11 +49,14 @@
   },
   
   // Value and units of measure
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "10828004",
-        "display": "Positive (qualifier value)"
-      }
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "POS"
+        }
+      ]
+    }
+  ]
 }
