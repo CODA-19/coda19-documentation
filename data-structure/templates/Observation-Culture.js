@@ -30,26 +30,25 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "94531-1",
-        "display": "RT-PCR tests (respiratory specimen)"
+        "code": "600-7",
+        "display": "Bacteria identified in Blood by Culture"
       }
     ],
-    "text": "SARS-CoV-2 RT-PCR"
+    "text": "Bacterial Culture - Blood"
   },
   
-  // SNOMED code for the body site used (SNOMED "code" field to be omitted until coding/categorization completed) 
-  "bodySite": {
+  // SNOMED code for the method used (SNOMED "code" field to be omitted until coding/categorization completed) 
+  "method": {
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "258500001",
-        "display": "Nasopharyngeal swab (specimen)"
+        "code": "104177005",
+        "display": "Blood culture for bacteria, including anaerobic screen"
       }
     ]
   },
-  
-  // Value and units of measure
-  "interpretation": [
+ 
+ "interpretation": [
     {
       "coding": [
         {

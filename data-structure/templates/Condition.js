@@ -1,6 +1,6 @@
 { 
   // The type of resource
-  "resourceType" : "Diagnosis",
+  "resourceType" : "Condition",
   
   // Each resource entry needs a unique id for the ndjson bulk upload. 
   "id": "f002",
