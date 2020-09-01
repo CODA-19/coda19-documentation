@@ -1,53 +1,49 @@
 {
-  
+
   // The type of resource
-  "resourceType" : "Observation",
-  
+  "resourceType": "Observation",
+
   // Each resource entry needs a unique id for the ndjson bulk upload. 
   "id": "f002",
-  
+
   // The status of the observation
   "status": "final",
-  
+
   // Time of the observation
   "effectiveDateTime": "YYYY-MM-DDThh:mm:ss+zz:zz",
-    
+
   // Time result issued
   "issued": "YYYY-MM-DDThh:mm:ss.sss+zz:zz",
-  
+
   // Patient associated with the observation
   "subject": {
     "reference": "Patient/3294843"
   },
-  
+
   // Clinical episode associated with the observation (if possible)
   "encounter": {
     "reference": "Encounter/2314234"
   },
-  
+
   // LOINC code for the observation that was made (LOINC "code" field to be omitted until coding/categorization completed)
   "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "718-7",
-        "display": "Hemoglobin [Mass/volume] in Blood"
-      }
-    ],
+    "coding": [{
+      "system": "http://loinc.org",
+      "code": "718-7",
+      "display": "Hemoglobin [Mass/volume] in Blood"
+    }],
     "text": "Hemoglobin"
   },
-  
+
   // SNOMED code for the body site used (SNOMED "code" field to be omitted until coding/categorization completed) 
   "bodySite": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "122555007",
-        "display": "Venous blood specimen (specimen)"
-      }
-    ]
+    "coding": [{
+      "system": "http://snomed.info/sct",
+      "code": "122555007",
+      "display": "Venous blood specimen (specimen)"
+    }]
   },
-  
+
   // Value and units of measure
   "valueQuantity": {
     "value": 96,
