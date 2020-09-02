@@ -22,3 +22,7 @@ In collaboration with 9 hospital sites at the Canadian epicenter of the pandemic
 * [CODA-19 dashboard](https://github.com/CODA-19/dashboard)
 * [CODA-19 API server](https://github.com/CODA-19/api)
 * [CODA-19 deploy scripts](https://github.com/CODA-19/deploy-scripts)
+
+## Basecamp 
+
+All CODA-19 team members are encouraged to use the [team Basecamp](https://3.basecamp.com/4217270/) for communication regarding the project.
