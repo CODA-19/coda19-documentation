@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-02T15:53:02.505Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="q0LfGlJEME56o-TK2-jU" version="13.6.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-09-02T15:53:27.119Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="nBZl4juViU8vXdB8EmHL" version="13.6.5" type="github" pages="2">
   <diagram name="v2" id="tqLJBO_BbukvwmhvbSCI">
     <mxGraphModel dx="972" dy="1034" grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -235,6 +235,9 @@
         </mxCell>
         <mxCell id="PLL3QyX1esiPlHnVC5aH-0" value="Keycloak dashboard" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF4C3;fontSize=10;align=center;" vertex="1" parent="tmh-D557QrPGJzhV4SVf-1">
           <mxGeometry x="501" y="255" width="102" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PLL3QyX1esiPlHnVC5aH-4" value="..." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF4C3;fontSize=10;align=center;" vertex="1" parent="tmh-D557QrPGJzhV4SVf-1">
+          <mxGeometry x="501" y="288.75" width="102" height="22.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
