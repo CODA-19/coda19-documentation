@@ -11,8 +11,14 @@ In collaboration with 9 hospital sites at the Canadian epicenter of the pandemic
 
 ## Resources
 
-
 * [CIHR operating grant](https://docs.google.com/document/d/1-bVk3plo7Rc6sQA2FR1M5QdxKISzz8x2ild5AtaHI9s/edit)
 * [Data mappings](https://docs.google.com/spreadsheets/d/1z4nPlQMDxjYtalgTj8gJ12l7Yq6Zq1AUn9b9gpIruqI/edit)
 * [Governance framework](https://docs.google.com/document/d/18OGUERBgS5ZBxqt0RCwzAX7Osle5Uv4D3NEnSIZtiI8/edit)
 * [Data security framework](https://docs.google.com/document/d/16D4JzizgpSmF5CXiPPx5UEGZ_-nvJWjf0Rmb8qx67jE/edit)
+
+## Repositories
+
+* [FHIR templates](https://github.com/CODA-19/fhir-templates)
+* [CODA-19 dashboard](https://github.com/CODA-19/dashboard)
+* [CODA-19 API server](https://github.com/CODA-19/api)
+* [CODA-19 deploy scripts](https://github.com/CODA-19/deploy-scripts)
