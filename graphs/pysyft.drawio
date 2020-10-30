@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-30T01:29:53.476Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="_Zq89SLjNt2iE4zBuq9G" version="13.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-30T01:30:51.448Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="G6y6-d_VoGGsERvx2kPS" version="13.8.7" type="github">
   <diagram id="T5H_3VyD0Q95AF5PfXNq" name="Page-1">
-    <mxGraphModel dx="3430" dy="2455" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="807" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,6 +66,11 @@
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="V1wIChjYlS4gTkBvIGiZ-9" target="V1wIChjYlS4gTkBvIGiZ-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="V1wIChjYlS4gTkBvIGiZ-33" value="plaintext" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V1wIChjYlS4gTkBvIGiZ-26">
+          <mxGeometry x="-0.2305" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-9" value="WebSocket&lt;br&gt;forward" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="698" y="290" width="120" height="60" as="geometry" />
         </mxCell>
@@ -74,6 +79,11 @@
         </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.31;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="V1wIChjYlS4gTkBvIGiZ-13" target="V1wIChjYlS4gTkBvIGiZ-11">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V1wIChjYlS4gTkBvIGiZ-34" value="plaintext" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V1wIChjYlS4gTkBvIGiZ-17">
+          <mxGeometry x="-0.5758" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-13" value="Statistics&lt;br&gt;module" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="520" width="120" height="80" as="geometry" />
@@ -89,6 +99,11 @@
         </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="V1wIChjYlS4gTkBvIGiZ-31" target="V1wIChjYlS4gTkBvIGiZ-25">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="V1wIChjYlS4gTkBvIGiZ-35" value="plaintext" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="V1wIChjYlS4gTkBvIGiZ-32">
+          <mxGeometry x="-0.3256" y="3" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-31" value="Dashboard&lt;br&gt;backend" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="910" y="520" width="120" height="80" as="geometry" />
