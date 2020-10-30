@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-30T01:30:51.448Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="G6y6-d_VoGGsERvx2kPS" version="13.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-30T01:31:47.613Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="IEAsWRHAhqzcQNVq1lpi" version="13.8.7" type="github">
   <diagram id="T5H_3VyD0Q95AF5PfXNq" name="Page-1">
-    <mxGraphModel dx="807" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1715" dy="1228" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -107,6 +107,12 @@
         </mxCell>
         <mxCell id="V1wIChjYlS4gTkBvIGiZ-31" value="Dashboard&lt;br&gt;backend" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="910" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V1wIChjYlS4gTkBvIGiZ-36" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Green VM&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="V1wIChjYlS4gTkBvIGiZ-37" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Valeria VM&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="230" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
