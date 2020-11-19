@@ -161,7 +161,7 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
   "type": "response",
   "description": "This is a response with the patient ages.",
   "destination": {
-    "site": "000", // back to master
+    "site": "000",
     "service": "stats"
   },
 
