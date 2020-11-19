@@ -16,11 +16,11 @@ sites-chuq <SITE base IP>/api
 
 ```js
 const keycloak = new Keycloak({
-    url: '<VALERIA base url>/dashboard/auth',
-    realm: 'coda19',
-    scope: 'openid'
-    clientId: 'dashboard',
-    realmPublicKey: 'MIIBIjANB...'
+  url: '<VALERIA base url>/dashboard/auth',
+  realm: 'coda19',
+  scope: 'openid'
+  clientId: 'dashboard',
+  realmPublicKey: 'MIIBIjANB...'
 })
 
 keycloak.init().then(function(authenticated) {
@@ -35,25 +35,25 @@ keycloak.init().then(function(authenticated) {
 ```js
 const loadData = function () {
 
-    const url = 'http://localhost:8080/restful-service'
+  const url = 'http://localhost:8080/restful-service'
 
-    const req = new XMLHttpRequest()
-    req.open('GET', url, true)
-    req.setRequestHeader('Accept', 'application/json')
-    // Set the JWT as the header
-    req.setRequestHeader('Authorization', 'Bearer ' + keycloak.token)
+  const req = new XMLHttpRequest()
+  req.open('GET', url, true)
+  req.setRequestHeader('Accept', 'application/json')
+  // Set the JWT as the header
+  req.setRequestHeader('Authorization', 'Bearer ' + keycloak.token)
 
-    req.onreadystatechange = function () {
-        if (req.readyState == 4) {
-            if (req.status == 200) {
-                alert('Success')
-            } else if (req.status == 403) {
-                alert('Forbidden')
-            }
-        }
+  req.onreadystatechange = function () {
+    if (req.readyState == 4) {
+      if (req.status == 200) {
+        alert('Success')
+      } else if (req.status == 403) {
+        alert('Forbidden')
+      }
     }
+  }
 
-    req.send()
+  req.send()
 }
 ```
 
