@@ -175,3 +175,46 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
     ]
 }
 ```
+
+**Autre example: message pour le machine learning service:**
+
+```json
+
+ {
+  
+  "type": "message",
+  "description": "This message prepares a machine learning model."
+  
+  "destination": {
+    "site": "110",
+    "service": "learning"
+  },
+  
+  "authorization": "xxxxx.yyyyy.zzzzz",
+  
+  "data": {
+    "action": "prepare", 
+      
+    "filter": `{
+      subject {
+         reference
+            resource(type : Patient) { age, sex, deceased }
+      }
+    }`,
+      
+    "options": {
+      "model": "keras model json here",
+      "hyperparameters": {
+        "num_predictors": 2,
+        "num_outcomes": 1,
+        "learning_rate": 0.001,
+        "validation_split": 0.33,
+        "epochs": 150,
+        "batch_size": 10,
+        "shuffle": 1
+      }
+    }
+  }
+  
+}
+```
