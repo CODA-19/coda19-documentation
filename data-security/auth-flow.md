@@ -1,3 +1,14 @@
+## Keycloak
+
+**List of clients**
+```
+dashboard <VALERIA base url>/dashboard
+sites-chum <SITE base IP>/api
+sites-chuq <SITE base IP>/api
+```
+
+## Auth Flow
+
 **1. Le dashboard user s'authentifie avec Keycloak-JS:**
 
 ```js
@@ -52,13 +63,13 @@ npm install express-session --save
 
 ```js
 let kcConfig = {
-       clientId: 'sites-chum',
-       bearerOnly: true,
-       serverUrl: '<CHUM base IP>/api/auth',
-       scope: 'openid'
-       realm: 'coda19',
-       username: 'hub',
-       password: 'hub'
+  clientId: 'sites-chum',
+  bearerOnly: true,
+  serverUrl: '<CHUM base IP>/api/auth',
+  scope: 'openid'
+  realm: 'coda19',
+  username: 'hub',
+  password: 'hub'
 }
 
 const session = require('express-session')
@@ -90,4 +101,74 @@ module.exports = {
   getKeycloak
 }
 ```
-4. Chaque message WebSocket contient le JWT
+
+**4. Un utilisateur envoie une demande au hub API via un POST sur le backend du dashboard:** 
+
+```js
+// Include JWT token for authentication of user to dashboard client in header (keycloak.token)
+Authorization: Bearer xxxxx.yyyyy.zzzzz
+{
+
+  "data": {
+    "action": "summarize",
+    // Represented in GraphQL
+    "filter": `{
+      subject {
+         reference
+            resource(type : Patient) { age, sex, deceased }
+      }
+    }`,
+    "options": { "limit": 100, "ops": ["mean", "median", "max"] }
+  }
+
+}
+```
+
+**5. Le hub forward la demande à tous les sites concernés via un message WebSocket JSON:
+
+```js
+{
+  
+  // Include JWT token for authentication of hub-api to site-api in header (_keycloak.token)
+  "type": "message",
+  "authorization": "xxxxx.yyyyy.zzzzz",
+  "description": "This message gets a summary of patient ages.",
+  "destination": {
+    "site": "110",
+    "service": "stats"
+  },
+
+  "data": {
+    "action": "summarize",
+    // Represented in GraphQL
+    "filter": `{
+      subject {
+         reference
+            resource(type : Patient) { age, sex, deceased }
+      }
+    }`,
+    "options": { "limit": 100, "ops": ["mean", "median", "max"] }
+  }
+
+}
+```
+
+**6. Les sites retournent la réponse via le WebSocket 
+
+```json
+{
+
+  "type": "response",
+  "description": "This is a response with the patient ages.",
+  "destination": {
+    "site": "000", // back to master
+    "service": "stats"
+  },
+
+  "data": {
+    "num_records": 23,
+    "variables": [
+      { "name": "age", "mean": 73, "median": 56, "max": 100 }
+    ]
+}
+```
