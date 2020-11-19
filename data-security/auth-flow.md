@@ -132,18 +132,18 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
 ```js
 {
   
-  // Include JWT token for authentication of hub-api to site-api in header (_keycloak.token)
   "type": "message",
-  "authorization": "xxxxx.yyyyy.zzzzz",
   "description": "This message gets a summary of patient ages.",
+
   "destination": {
     "site": "110",
     "service": "stats"
   },
 
+  "authorization": "xxxxx.yyyyy.zzzzz",
+
   "data": {
     "action": "summarize",
-    // Represented in GraphQL
     "filter": `{
       subject {
          reference
@@ -178,7 +178,7 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
 
 **Autre example: message pour le machine learning service:**
 
-```json
+```js
 
  {
   
