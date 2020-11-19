@@ -127,7 +127,7 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
 }
 ```
 
-**5. Le hub forward la demande à tous les sites concernés via un message WebSocket JSON:
+**5. Le hub forward la demande à tous les sites concernés via un message WebSocket JSON:**
 
 ```js
 {
@@ -156,7 +156,7 @@ Authorization: Bearer xxxxx.yyyyy.zzzzz
 }
 ```
 
-**6. Les sites retournent la réponse via le WebSocket 
+**6. Les sites retournent la réponse via le WebSocket:**
 
 ```json
 {
