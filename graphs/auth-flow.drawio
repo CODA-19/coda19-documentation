@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-20T23:51:57.346Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="sZVy0gh7car5wKVlXaaN" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-20T23:54:16.739Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="xEiRFLJyuuPJQVZ4L8H9" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
-    <mxGraphModel dx="1991" dy="1368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
+    <mxGraphModel dx="2820" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -362,7 +362,7 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-55" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
           <mxGeometry x="32.5" width="180" height="175" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-47" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Keycloak realm: CODA-19&lt;/u&gt;&lt;br&gt;Private key&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Public key&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-47" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Realm: CODA-19&lt;/u&gt;&lt;br&gt;Private key&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Public key&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
           <mxGeometry x="5" y="75.43586206896552" width="235" height="24.137931034482758" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-48" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C7131F;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.data_encryption_key;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
@@ -371,8 +371,11 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-46" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Key_Vaults.svg;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
           <mxGeometry x="147.62" y="110.0003448275862" width="48" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-138" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Keycloak realm: CHUM&lt;/u&gt;&lt;br&gt;Private key&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Public key&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
-          <mxGeometry x="5" y="36.20586206896553" width="235" height="24.137931034482758" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-138" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;Realm: CHUM&lt;br&gt;&lt;/u&gt;Symmetric key&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
+          <mxGeometry x="5" width="235" height="60.34" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-140" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-93">
+          <mxGeometry x="103.88999999999999" y="45.84000000000003" width="32.22" height="14.5" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;" edge="1" parent="1" source="p4e5K4KNWvCtrYB_MZkV-48">
           <mxGeometry relative="1" as="geometry">
@@ -406,11 +409,11 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-96" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;CODA-19 site API&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="760" y="148" width="105" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-101" value="&lt;b&gt;Green VM credentials store&lt;/b&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Site secret key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-101" value="&lt;u style=&quot;font-size: 10px&quot;&gt;Realm: CHUM&amp;nbsp;&lt;br&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;Symmetric key&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="432.5" y="158" width="180" height="82" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-105" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="460" y="205.5" width="32.22" height="14.5" as="geometry" />
+          <mxGeometry x="504.39" y="205.5" width="32.22" height="14.5" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="1" source="p4e5K4KNWvCtrYB_MZkV-109" target="p4e5K4KNWvCtrYB_MZkV-131">
           <mxGeometry relative="1" as="geometry" />
@@ -435,7 +438,10 @@
           <mxGeometry x="1080" y="362" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-49" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Keycloak credentials store&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="405" y="307.85896551724136" width="235" height="24.137931034482758" as="geometry" />
+          <mxGeometry x="403" y="302.99896551724134" width="235" height="24.137931034482758" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-142" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Green VM credentials store&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="405" y="129.99896551724134" width="235" height="24.137931034482758" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
