@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T01:31:21.577Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="nUHmsrTUQWgoIMRkWelb" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T01:34:29.878Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="MUd8agiyVkpumsY0mYly" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="2260" dy="4338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
@@ -657,6 +657,18 @@
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-322" value="&lt;font style=&quot;font-size: 13px&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;CODA-19 site API&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="1587" y="-1795" width="147" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-324" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;AidBox credentials store&lt;/b&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="695" y="-2299.9999999999995" width="235" height="26.35" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-325" value="&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;&lt;br&gt;User:&lt;/b&gt;&amp;nbsp;admin&lt;br&gt;&lt;b&gt;Access:&lt;/b&gt;&amp;nbsp;read/write&lt;br&gt;&lt;b&gt;DB key:&lt;/b&gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;br&gt;User:&amp;nbsp;&lt;/b&gt;client&lt;br&gt;&lt;b&gt;Access:&lt;/b&gt;&amp;nbsp;read only&lt;br&gt;&lt;b&gt;DB key (site X)&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="722.5" y="-2270" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-326" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.mscae.enterprise.key_permissions;fontSize=12;fillColor=#FFB570;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="799" y="-2120" width="24.5" height="47.12" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-327" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.mscae.enterprise.key_permissions;fontSize=12;rotation=-90;fillColor=#EA6B66;" vertex="1" parent="1">
+          <mxGeometry x="800.25" y="-2223.32" width="24.5" height="47.12" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
