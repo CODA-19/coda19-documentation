@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T00:13:57.674Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="Sys6NQb6B4i0AUKjc0Er" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T00:15:30.330Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="8yVLMpC6vY49U09h_jIH" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="1692" dy="3563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
@@ -403,17 +403,14 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-152" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="410" y="200" width="235" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-101" value="&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;b&gt;Key: &lt;/b&gt;site DB key (CHUM)&lt;/u&gt;&lt;br&gt;symmetric key&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Key:&lt;/b&gt;&lt;u&gt;&lt;b&gt; &lt;/b&gt;hub API key (CHUM)&amp;nbsp;&lt;/u&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;symmetric key&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
-          <mxGeometry x="27.5" y="43.273919054052826" width="180" height="126.72608094594719" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-101" value="&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;b&gt;Key: &lt;/b&gt;site DB key (CHUM)&lt;/u&gt;&lt;br&gt;symmetric key&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Key:&lt;/b&gt;&lt;u&gt;&lt;b&gt; &lt;/b&gt;hub API key (CHUM)&amp;nbsp;&lt;/u&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;symmetric key&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
+          <mxGeometry x="27.5" y="-40" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-105" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
-          <mxGeometry x="102.99999999999999" y="145.00231960201003" width="32.22" height="14.5" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-187" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
+          <mxGeometry x="94.44999999999999" y="129.25" width="46.11" height="20.75" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-142" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Green VM credentials store&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
-          <mxGeometry width="235" height="37.30372441638479" as="geometry" />
-        </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-173" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
-          <mxGeometry x="101.38999999999999" y="90.00231960201006" width="32.22" height="14.5" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-188" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;strokeColor=none;fillColor=#FFB570;" vertex="1" parent="p4e5K4KNWvCtrYB_MZkV-152">
+          <mxGeometry x="94.45000000000005" y="40" width="46.11" height="20.75" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#000000;strokeWidth=2;" edge="1" parent="1" target="p4e5K4KNWvCtrYB_MZkV-165">
           <mxGeometry relative="1" as="geometry">
@@ -453,17 +450,20 @@
             <mxPoint x="6.75" y="0.8799999999999999" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-181" value="&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;User:&amp;nbsp;&lt;/b&gt;api_read&lt;br&gt;&lt;br&gt;&lt;b&gt;Key: &lt;/b&gt;&lt;u&gt;site DB key (CHUM)&lt;/u&gt;&lt;br&gt;Symmetric key&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-181" value="&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;User:&amp;nbsp;&lt;/b&gt;api_read&lt;br&gt;&lt;br&gt;&lt;b&gt;Access:&lt;/b&gt;&amp;nbsp;read only&lt;br&gt;&lt;br&gt;&lt;b&gt;Key: &lt;/b&gt;&lt;u&gt;site DB key (CHUM)&lt;br&gt;&lt;/u&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="437.5" y="-46.72608094594716" width="180" height="126.72608094594719" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-182" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;AidBox credentials store&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="410" y="-90" width="235" height="37.30372441638479" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-183" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;fillColor=#005073;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="511.39" y="42.75231960201006" width="32.22" height="14.5" as="geometry" />
-        </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-185" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
           <mxGeometry x="70" y="950" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-142" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Green VM credentials store&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="120" width="235" height="37.3" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-189" value="" style="points=[[0,0.5,0],[0.24,0,0],[0.5,0.28,0],[0.995,0.475,0],[0.5,0.72,0],[0.24,1,0]];verticalLabelPosition=bottom;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.key;strokeColor=none;fillColor=#FFB570;" vertex="1" parent="1">
+          <mxGeometry x="504.45000000000005" y="49.99999999999999" width="46.11" height="20.75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
