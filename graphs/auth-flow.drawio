@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T03:57:26.959Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="QQanbiR60e-srwCkf2Kq" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T03:58:26.653Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="ntGsejouQl4uj4Cs4XyE" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="3134" dy="6726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2200" math="0" shadow="0">
       <root>
@@ -337,7 +337,7 @@
             <mxPoint y="5.06" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-74" value="Keycloak server&lt;br&gt;validates site group&lt;br&gt;memberships" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" parent="1" vertex="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-74" value="Keycloak server&lt;br&gt;validates site (group)&lt;br&gt;permissions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="1325" y="-2984.7" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-92" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/font-awesome/1792/heartbeat-128.png;imageBackground=#ffffff;" parent="1" vertex="1">
@@ -394,7 +394,7 @@
             <mxPoint x="28" y="-11.86" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-131" value="Receive request&lt;br&gt;from dashboard backend" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="1" vertex="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-131" value="Hub API receives request from dashboard server" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="1" vertex="1">
           <mxGeometry x="1325" y="-3093.41" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-152" value="" style="group" parent="1" vertex="1" connectable="0">
