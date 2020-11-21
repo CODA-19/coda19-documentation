@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T00:30:56.595Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="lUL4u8Q32A92hCvYchCx" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T00:31:24.898Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="mxmk-DYBD4MRoG3HQpf0" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="2417" dy="4061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
@@ -412,7 +412,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-153" value="Create job in message queue and&lt;br&gt;forward message to correct service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" vertex="1" parent="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-153" value="Create job in message queue and&lt;br&gt;forward message to correct service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1240" y="-1942" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#B3B3B3;strokeWidth=1;" edge="1" parent="1">
@@ -502,9 +502,6 @@
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-205" value="&lt;b&gt;Redis&lt;/b&gt;: store jobs" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#fff2cc;gradientColor=#ffd966;fontSize=13;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1450" y="-1890" width="170" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-214" value="&lt;font style=&quot;font-size: 13px&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;Coordinator&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="1306.5" y="-1875" width="147" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
