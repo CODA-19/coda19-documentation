@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T00:21:28.175Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="HTfWV4QDjMHjNoMcg_Ju" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T00:22:46.257Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="jaXIkBTfILtTn4pH88ey" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="2820" dy="4338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
@@ -249,11 +249,11 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-25" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Authorization endpoint&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="350" y="-1231.29" width="135" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-26" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Keycloak server&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-26" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Keycloak server&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="432.5" y="-1538.29" width="135" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-33" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Data dashboard backend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="112.5" y="-1538.29" width="135" height="20" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-33" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Data dashboard backend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="101.25" y="-1538.29" width="157.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-36" value="" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -295,8 +295,8 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-41" value="Dashboard backend&lt;br&gt;validates JWT" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#36393d;fillColor=#cdeb8b;" vertex="1" parent="1">
           <mxGeometry x="760" y="-1511.29" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-43" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Data dashboard backend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="752.5" y="-1538.29" width="135" height="20" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-43" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Data dashboard backend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="736.25" y="-1538.29" width="167.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-56" value="" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -325,9 +325,6 @@
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-74" value="Keycloak server&lt;br&gt;validates site group&lt;br&gt;memberships" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
           <mxGeometry x="1080" y="-1611.29" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-75" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Keycloak server&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="-1642.29" width="135" height="20" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-76" value="&lt;font style=&quot;font-size: 10px&quot;&gt;dashboard.hub.coda19.com/analyze&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1143.75" y="-1211.29" width="115" height="20" as="geometry" />
@@ -367,8 +364,8 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-95" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;CODA-19 hub API&amp;nbsp;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="751.5" y="-1651.29" width="135" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-96" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;CODA-19 site API&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="753" y="-1976" width="105" height="20" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-96" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;CODA-19 site API&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="753" y="-1976" width="147" height="20" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeWidth=2;" edge="1" parent="1" source="p4e5K4KNWvCtrYB_MZkV-109" target="p4e5K4KNWvCtrYB_MZkV-131">
           <mxGeometry relative="1" as="geometry" />
@@ -464,6 +461,12 @@
           <mxGeometry x="0.1634" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-198" value="&lt;font style=&quot;font-size: 13px&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;Keycloak &lt;br&gt;server&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="993.5" y="-1586.93" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-200" value="&lt;font style=&quot;font-size: 13px&quot;&gt;&lt;b style=&quot;font-size: 13px&quot;&gt;Dashboard &lt;br&gt;backend&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="990" y="-1489.64" width="103.5" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
