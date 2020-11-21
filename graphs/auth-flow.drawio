@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T02:38:03.403Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="-FR3iuMhSCFKSmQMCx1T" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T02:38:46.209Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="K7JzSANprUpfPUqBQG2h" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="2239" dy="6061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2200" math="0" shadow="0">
       <root>
@@ -530,8 +530,8 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-256" value="Client receives progress indicator" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="1816.25" y="-2640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-263" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Keycloak credentials store&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="692.5" y="-3304" width="177.5" height="37.3" as="geometry" />
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-263" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Keycloak machine credentials&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="693.75" y="-3300.71" width="177.5" height="37.3" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-264" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="450" y="-3265.7" width="240" height="217" as="geometry" />
@@ -557,7 +557,7 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-279" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;gradientColor=#ffffff;fontSize=12;" parent="p4e5K4KNWvCtrYB_MZkV-264" vertex="1">
           <mxGeometry x="122" y="97.5" width="11" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-271" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;Keycloak users store&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-271" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Keycloak users credentials&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="481" y="-3300" width="177.5" height="37.3" as="geometry" />
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-282" value="&lt;b&gt;Minio server&lt;/b&gt;&lt;br&gt;(images, signals)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" parent="1" vertex="1">
@@ -685,8 +685,9 @@
         <mxCell id="TFvqwG5vpDlTnYAwkJin-8" value="&lt;b style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;User:&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;emergdoc21&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;&lt;br style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;&lt;b style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;In groups&lt;/b&gt;&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;: &lt;br&gt;[&quot;CHUM&quot;,&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;&lt;span style=&quot;font-family: &amp;#34;courier new&amp;#34; ; font-size: 11px&quot;&gt;&quot;CHUQ&quot;, &quot;JGH&quot;]&lt;/span&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="318.63" y="-3237.2" width="151.12" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="TFvqwG5vpDlTnYAwkJin-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#B3B3B3;" edge="1" parent="1" source="p4e5K4KNWvCtrYB_MZkV-278" target="p4e5K4KNWvCtrYB_MZkV-16">
+        <mxCell id="TFvqwG5vpDlTnYAwkJin-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#B3B3B3;startArrow=classic;startFill=1;" edge="1" parent="1" target="p4e5K4KNWvCtrYB_MZkV-16">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="573" y="-3060" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="573" y="-2990" />
               <mxPoint x="640" y="-2990" />
