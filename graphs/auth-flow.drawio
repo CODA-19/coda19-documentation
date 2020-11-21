@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-21T01:08:25.387Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="GZzIWrb7Ijvdj9_T2mvf" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-21T01:08:46.081Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36" etag="oCwOysu1tETWVaVN88ga" version="13.10.0" type="github">
   <diagram id="xXC8S_svYIRL2FnE1IQ2" name="Page-1">
     <mxGraphModel dx="2417" dy="4061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2400" math="0" shadow="0">
       <root>
@@ -178,7 +178,7 @@
         </mxCell>
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-110" value="HTTP upgrade" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="p4e5K4KNWvCtrYB_MZkV-108">
           <mxGeometry x="-0.429" y="-2" relative="1" as="geometry">
-            <mxPoint x="5.5" y="4.859999999999999" as="offset" />
+            <mxPoint x="3" y="-25.14" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="JVTaZavZ11wcBZYtvzni-54" value="Site API establishes and maintains socket" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
@@ -449,14 +449,13 @@
         <mxCell id="p4e5K4KNWvCtrYB_MZkV-153" value="Site API&amp;nbsp;forward message to correct service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1240" y="-1942" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="p4e5K4KNWvCtrYB_MZkV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#B3B3B3;strokeWidth=1;exitX=0.24;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="p4e5K4KNWvCtrYB_MZkV-187">
+        <mxCell id="p4e5K4KNWvCtrYB_MZkV-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;strokeColor=#B3B3B3;strokeWidth=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="528" y="-1900" as="sourcePoint" />
-            <mxPoint x="1140" y="-1850" as="targetPoint" />
+            <mxPoint x="511" y="-1860" as="sourcePoint" />
+            <mxPoint x="1140" y="-1830" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="511" y="-1860" />
-              <mxPoint x="710" y="-1860" />
-              <mxPoint x="710" y="-1850" />
+              <mxPoint x="511" y="-1830" />
+              <mxPoint x="1140" y="-1830" />
             </Array>
           </mxGeometry>
         </mxCell>
