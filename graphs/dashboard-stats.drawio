@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-15T19:28:44.177Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="hyEtzMHUCKbkes5mt4_w" version="14.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-15T19:29:45.841Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="wnYfjE3WQ9vfTqPV-Z9i" version="14.3.1" type="github">
   <diagram id="Czet3Hh89mNi5NOvH4gC" name="Page-1">
     <mxGraphModel dx="1875" dy="10906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="4900" math="0" shadow="0">
       <root>
@@ -766,11 +766,20 @@
         <mxCell id="Ny0gKB7W9_KMQSZwv9DY-215" value="Step" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="325" y="-6500" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-216" value="&lt;font style=&quot;font-size: 18px&quot;&gt;4. Summarize a count (patients alive) broken down by slices of time (14 days)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-216" value="&lt;font style=&quot;font-size: 18px&quot;&gt;4. Summarize a variable count (patients alive) broken down by slices of time (14 days)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="81" y="-6340" width="1020" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Ny0gKB7W9_KMQSZwv9DY-217" value="&lt;b&gt;deathDate&amp;nbsp;&lt;/b&gt;&lt;b&gt;&lt;font color=&quot;#66b2ff&quot;&gt;(X)&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="227" y="-5685" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-218" value="" style="endArrow=none;dashed=1;html=1;fontSize=15;exitX=0.488;exitY=0.18;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Ny0gKB7W9_KMQSZwv9DY-69" target="Ny0gKB7W9_KMQSZwv9DY-219">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="-7070" as="sourcePoint" />
+            <mxPoint x="300" y="-7120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-219" value="Fields: Patient.age" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="-7125" width="145" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
