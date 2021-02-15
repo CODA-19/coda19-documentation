@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-15T19:26:14.185Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="eEqxW_OHUOu1z6iIDQcA" version="14.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-15T19:26:19.263Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="tuMMwViQh53fftDODdPx" version="14.3.1" type="github">
   <diagram id="Czet3Hh89mNi5NOvH4gC" name="Page-1">
     <mxGraphModel dx="1875" dy="10906" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="4900" math="0" shadow="0">
       <root>
@@ -769,7 +769,7 @@
         <mxCell id="Ny0gKB7W9_KMQSZwv9DY-216" value="&lt;font style=&quot;font-size: 18px&quot;&gt;4. Summarize a count (patients alive) broken down by slices of time (14 days)&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="81" y="-6340" width="1020" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-217" value="&lt;b&gt;deceased&amp;nbsp;&lt;/b&gt;&lt;b&gt;&lt;font color=&quot;#66b2ff&quot;&gt;(X)&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Ny0gKB7W9_KMQSZwv9DY-217" value="&lt;b&gt;deathDate&amp;nbsp;&lt;/b&gt;&lt;b&gt;&lt;font color=&quot;#66b2ff&quot;&gt;(X)&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="227" y="-5685" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
