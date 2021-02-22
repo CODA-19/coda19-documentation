@@ -9,10 +9,7 @@ servers:
 paths:
   /stats/summarize:
     post:
-      summary: >-
-        This message returns summarized statistics according to
-        the parameters specified in the requested selectors.
-      description: Note - this API endpoint is subject to change pending implementation.
+      summary: Get the summary statistics for one or more variables
       requestBody:
         description: >-
           The `selectors` field lists, for each resource type of interest, the `fields` to be extracted, and a list of `filters` that specifices which resources of that type are extracted.
@@ -152,8 +149,7 @@ paths:
   /stats/breakdown/categorical:
     post:
       summary: >-
-        Get the summary statistics for a variable B, broken down by values of a categorical variable B.
-      description: Note - this API endpoint is subject to change pending implementation.
+        Get the summary statistics for a variable A, broken down by values of a categorical variable B.
       requestBody:
         description: >-
           This example shows the breakdown of age according to gender, for patients who are currently alive.
