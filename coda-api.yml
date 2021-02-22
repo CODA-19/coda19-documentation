@@ -10,75 +10,111 @@ paths:
   /stats/summarize:
     post:
       summary: >-
-        This message returns summarized statistics from this site according to
-        the parameters specified in the requested filters.
-      description: Test
+        This message returns summarized statistics according to
+        the parameters specified in the requested selectors.
+      description: Note - this API endpoint is subject to change pending implementation.
       requestBody:
         description: >-
-          The `filter` field specifies the list of fields that will be
-          summarized.
+          The `selectors` field lists, for each resource type of interest, the `fields` to be extracted, and a list of `filters` that specifices which resources of that type are extracted.
         required: true
         content:
           application/json:
             schema:
               type: object
               properties:
-                route:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: stats
-                    action:
-                      type: string
-                      example: summarize
-                message:
-                  type: object
-                  properties:
-                    filter:
+                      example: 1613351895
+                    route:
                       type: object
                       properties:
-                        start_time:
-                          type: integer
-                          example: 1613245131
-                        end_time:
-                          type: integer
-                          example: 1613245132
-                        query:
+                        site:
                           type: string
-                          example: >-
-                            { subject { reference resource(type : Patient) {
-                            age, gender } } }
+                          example: '110'
+                        service:
+                          type: integer
+                          example: stats
+                        task:
+                          type: string
+                          example: summarize
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
+                  type: object
+                  properties:
+                    selectors:
+                      type: array
+                      items:
+                        type: object
+                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] },
+       { "resource": "Observation", filters: [{ "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }], fields: [ {"path": "valueQuantity.value", "label": "hemoglobin" }] } ]
+    
                     options:
                       type: object
                       properties:
-                        continuous_metrics:
-                          type: array
-                          items:
-                            type: string
-                          example:
-                            - mean
-                            - stdev
-                            - ci95
-                        discrete_metrics:
-                          type: array
-                          items:
-                            type: string
-                          example:
-                            - mode
-                            - marginals
+                        measures:
+                          type: object
+                          properties:
+                            continuous:
+                              type: array
+                              items:
+                                type: string
+                              example:
+                                - count
+                                - mean
+                                - stdev
+                                - ci95
+                            categorical:
+                              type: array
+                              items:
+                                type: string
+                              example:
+                                - count
+                                - mode
       responses:
         '200':
-          description: The model ran successfully and the testing results are reported.
+          description: The `summarize` task ran request ran successfully and results are reported.
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  message:
+                  header:
+                    type: object
+                    properties:
+                      timestamp:
+                        type: integer
+                        example: 1613351943
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: stats
+                          task:
+                            type: string
+                            example: summarize
+                          action:
+                            type: string
+                            example: report
+                          
+                  body:
                     type: object
                     properties:
                       results:
@@ -86,185 +122,622 @@ paths:
                         items:
                           type: object
                         example:
-                          - field: age
-                            mean: 72.5
-                            stdev: 18.1
+                          - field: "age"
+                            count: 1766
+                            mean: 72
+                            stdev: 23
                             ci95:
-                              - 23.2
-                              - 91.9
-                          - field: gender
-                            mode: male
-                            marginals:
-                              - value: male
-                                count: 922
-                              - value: female
-                                count: 844
+                              - 20
+                              - 95
+                          - field: "gender"
+                            mode: "male"
+                            count:
+                              - label: "male"
+                                value: 922
+                              - label: "female"
+                                value: 844
+                          - field: "hemoglobin"
+                            count: 1432
+                            mean: 140
+                            stdev: 41
+                            ci95:
+                              - 54
+                              - 172
         '403':
           description: The request is not authorized.
         '500':
           description: An error occurred and the data could not be summarized.
-  /stats/breakdown:
+  
+  
+  /stats/breakdown/categorical:
     post:
       summary: >-
-        This message returns summarized statistics for a given variable, split
-        in N groups according to a discrete variable having N possible values.
-      description: Test
+        Get the summary statistics for a variable B, broken down by values of a categorical variable B.
+      description: Note - this API endpoint is subject to change pending implementation.
       requestBody:
         description: >-
-          This example shows the breakdown of a continuous variable by a
-          discrete variable. The extension to the breakdown of a discrete
-          variable by another variable is trivial. Breaking down variables
-          (continuous or discrete) by thresholds of a continuous metric is not
-          supported in V1, but may be at a future date.
+          This example shows the breakdown of age according to gender, for patients who are currently alive.
         required: true
         content:
           application/json:
             schema:
               type: object
               properties:
-                route:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: stats
-                    action:
-                      type: string
-                      example: breakdown
-                message:
-                  type: object
-                  properties:
-                    filter:
+                      example: 1613351895
+                    route:
                       type: object
                       properties:
-                        start_time:
-                          type: integer
-                          example: 1613245131
-                        end_time:
-                          type: integer
-                          example: 1613245132
-                        fields:
+                        site:
                           type: string
-                          example: >-
-                            { subject { reference resource(type : Patient) {
-                            age, sex } } }
+                          example: '110'
+                        service:
+                          type: integer
+                          example: stats
+                        task:
+                          type: string
+                          example: breakdown
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
+                  type: object
+                  properties:
+                    selectors:
+                      type: array
+                      items:
+                        type: object
+                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] } ]
+    
                     options:
                       type: object
                       properties:
-                        continuous_metrics:
-                          type: array
-                          items:
-                            type: string
-                          example:
-                            - mean
-                            - stdev
-                            - ci95
-                        breakdown_by:
-                          type: string
-                          example: gender
+                        measures:
+                          type: object
+                          properties:
+                            continuous: 
+                              type: array
+                              items:
+                                type: string
+                              example:
+                                - count
+                                - mean
+                                - stdev
+                                - ci95
+                        breakdown:
+                          type: object
+                          properties:
+                            resource: 
+                              type: object
+                              properties:
+                                type:
+                                  type: string
+                                  example: "Patient"
+                                field:
+                                  type: string
+                                  example: "gender"
       responses:
         '200':
-          description: The model ran successfully and the testing results are reported.
+          description: The `breakdown` task ran request ran successfully and results are reported.
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  message:
+                  header:
                     type: object
                     properties:
-                      breakdown_by:
-                        type: string
-                        example: gender
+                      timestamp:
+                        type: integer
+                        example: 1613351943
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: stats
+                          task:
+                            type: string
+                            example: breakdown
+                          action:
+                            type: string
+                            example: report
+                          
+                  body:
+                    type: object
+                    properties:
                       results:
                         type: array
                         items:
                           type: object
                         example:
-                          - breakdown_value: male
+                          - field: "age"
+                            filter:
+                              field: "gender"
+                              operator: "is"
+                              value: "male"
                             data:
                               field: age
-                              mean: 70.5
-                              stdev: 16.2
+                              mean: 70
+                              stdev: 16
                               ci95:
-                                - 26.4
-                                - 91.3
-                          - breakdown_value: female
+                                - 26
+                                - 91
+                          - field: "age"
+                            filter:
+                              field: "gender"
+                              operator: "is"
+                              value: "female"
                             data:
                               field: age
-                              mean: 75.5
-                              stdev: 11.1
+                              mean: 75
+                              stdev: 11
                               ci95:
-                                - 29.2
-                                - 81.9
+                                - 29
+                                - 81
         '403':
           description: The request is not authorized.
         '500':
-          description: An error occurred and the data could not be summarized.
+          description: An error occurred and the operation could not be completed.
+          
+          
+          
+  /stats/breakdown/continuous:
+    post:
+      summary: >-
+        Get the summary statistics for a variable A, broken down by a slices of a continuous variable B (e.g. lab values by age).
+      description: Note - this API endpoint is subject to change pending implementation.
+      requestBody:
+        description: >-
+          This example shows the breakdown of hemoglobin values (LOINC code 718-7) according to age, in bins of 25 years. 
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                header: 
+                  type: object
+                  properties:
+                    timestamp:
+                      type: integer
+                      example: 1613351895
+                    route:
+                      type: object
+                      properties:
+                        site:
+                          type: string
+                          example: '110'
+                        service:
+                          type: integer
+                          example: stats
+                        task:
+                          type: string
+                          example: breakdown
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
+                  type: object
+                  properties:
+                    selectors:
+                      type: array
+                      items:
+                        type: object
+                      example: [ { "resource": "Patient",  fields: [ { "path": "age" }] },
+       { "resource": "Observation", filters: [ { "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }, fields: [ { "path": "valueQuantity.value", "label": "hemoglobin" } ]]  } ]
+    
+                    options:
+                      type: object
+                      properties:
+                        measures:
+                          type: object
+                          properties:
+                            continuous: 
+                              type: array
+                              items:
+                                type: string
+                              example:
+                                - mean
+                                - stdev
+                        breakdown:
+                          type: object
+                          properties:
+                            resource: 
+                              type: object
+                              properties:
+                                type:
+                                  type: string
+                                  example: "Patient"
+                                field:
+                                  type: string
+                                  example: "gender"
+                            slices:
+                              type: object
+                              properties:
+                                min: 
+                                  type: integer
+                                  example: 0
+                                max: 
+                                  type: integer
+                                  example: 100
+                                step: 
+                                  type: integer
+                                  example: 25
+                                units:
+                                  type: string
+                                  example: "years"
+      responses:
+        '200':
+          description: The `breakdown` task ran request ran successfully and results are reported.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  header:
+                    type: object
+                    properties:
+                      timestamp:
+                        type: integer
+                        example: 1613351943
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: stats
+                          task:
+                            type: string
+                            example: breakdown
+                          action:
+                            type: string
+                            example: report
+                          
+                  body:
+                    type: object
+                    properties:
+                      results:
+                        type: array
+                        items:
+                          type: object
+                        example:
+                          - field: "hemoglobin"
+                            filter:
+                              field: "age"
+                              operator: "in"
+                              value: [0, 25]
+                            data:
+                              mean: 140
+                              stdev: 22
+                          - field: "hemoglobin"
+                            filter:
+                              field: "age"
+                              operator: "in"
+                              value: [25, 50]
+                            data:
+                              mean: 130
+                              stdev: 27
+                          - field: "hemoglobin"
+                            filter:
+                              field: "age"
+                              operator: "in"
+                              value: [50, 75]
+                            data:
+                              mean: 120
+                              stdev: 34
+                          - field: "hemoglobin"
+                            filter:
+                              field: "age"
+                              operator: "in"
+                              value: [75, 100]
+                            data:
+                              mean: 112
+                              stdev: 35
+        '403':
+          description: The request is not authorized.
+        '500':
+          description: An error occurred and the requested operation could not be performed.
+          
+  /stats/breakdown/time:
+    post:
+      summary: >-
+        Get the summary statistics for a variable A, broken down by slices of a time variable B.
+      requestBody:
+        description: >-
+          This example shows the breakdown of the number of patients alive, broken down by 2 week slices on the span of all death dates. Note the use of FHIRpath queries. Note also the use of the resource name "patients" as a field name. This field is automatically created, references the total number of resources of that type, and is only valid in combination with the "count" measure. The name of the catch-all resource fields is the lowercase plural of the resource name (e.g. observations, patients, etc.)
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                header: 
+                  type: object
+                  properties:
+                    timestamp:
+                      type: integer
+                      example: 1613351895
+                    route:
+                      type: object
+                      properties:
+                        site:
+                          type: string
+                          example: '110'
+                        service:
+                          type: integer
+                          example: stats
+                        task:
+                          type: string
+                          example: breakdown
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
+                  type: object
+                  properties:
+                    selectors:
+                      type: array
+                      items:
+                        type: object
+                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [ { "path": "age" }, { "path": "deceased" }, { "path": "(Patient.deceased as deathTime)", "label": "deathTime" } ] } ]
+    
+                    options:
+                      type: object
+                      properties:
+                        measures:
+                          type: object
+                          properties:
+                            categorical: 
+                              type: array
+                              items:
+                                type: string
+                              example:
+                                - count
+                        breakdown:
+                          type: object
+                          properties:
+                            field: 
+                              type: string
+                              example: "deathTime"
+                            slices:
+                              type: object
+                              properties:
+                                min: 
+                                  type: integer
+                                  example: 1577854800
+                                max: 
+                                  type: integer
+                                  example: 1584158400
+                                step: 
+                                  type: integer
+                                  example: 1209600
+                                units:
+                                  type: string
+                                  example: "seconds"
+      responses:
+        '200':
+          description: The `breakdown` task ran request ran successfully and results are reported.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  header:
+                    type: object
+                    properties:
+                      timestamp:
+                        type: integer
+                        example: 1613351943
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: stats
+                          task:
+                            type: string
+                            example: breakdown
+                          action:
+                            type: string
+                            example: report
+                          
+                  body:
+                    type: object
+                    properties:
+                      results:
+                        type: array
+                        items:
+                          type: object
+                        example:
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1577854800, 1578978000]
+                            data:
+                              count: 140
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1578978000, 1580187600]
+                            data:
+                              count: 137
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1580187600, 1581656400]
+                            data:
+                              count: 130
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1581656400, 1582866000]
+                            data:
+                              count: 115
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1581656400, 1584158400]
+                            data:
+                              count: 100
+                          - field: "patients"
+                            filter:
+                              field: "deathTime"
+                              operator: "in"
+                              value: [1584158400, 1585368000]
+                            data:
+                              count: 99
+        '403':
+          description: The request is not authorized.
+        '500':
+          description: An error occurred and the requested data could not be returned.
   /learning/prepare:
     post:
       summary: >-
-        This message prepares a machine learning model for either training or
+        Prepares a machine learning model for either training or
         validation.
-      description: Test
+      description: Note - this API endpoint is subject to change pending implementation.
       requestBody:
-        description: Optional description in *Markdown*
+        description: This examples shows how to prepare a model to predict death based on age, sex, and hemoglobin (LOINC code 718-7). Note that the machine learning model is defined using the Keras JSON schema - refer to [Keras API - model_from_json()](https://www.tensorflow.org/api_docs/python/tf/keras/models/model_from_json). The optimizer name refers to a class in the namespace `tf.keras.optimizers`, and the optimizer parameter names represent the standard parameters to the Keras optimizer constructors. The compiler parameters refer to the parameters passed to the Keras model's `compile` function.
         required: true
         content:
           application/json:
             schema:
               type: object
               properties:
-                destination:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: learning
-                data:
-                  type: object
-                  properties:
-                    action:
-                      type: string
-                      example: prepare
-                    filter:
+                      example: 1613351895
+                    route:
                       type: object
                       properties:
-                        start_time:
-                          type: integer
-                          example: 1613245131
-                        end_time:
-                          type: integer
-                          example: 1613245132
-                        fields:
+                        site:
                           type: string
-                          example: >-
-                            { subject { reference resource(type : Patient) {
-                            age, sex } } }
+                          example: '110'
+                        service:
+                          type: integer
+                          example: learning
+                        task:
+                          type: string
+                          example: prepare
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
+                  type: object
+                  properties:
+                    selectors:
+                      type: array
+                      items:
+                        type: object
+                      example: [ { "resource": "Patient",  filters: [{ "path": "deceased", "operator": "is", "value": false }], fields: [{ "path": "age" }, { "path": "gender" }] },
+       { "resource": "Observation", filters: [{ "path": "valueCoded.code.coding", "operator": "is", "value": "718-7" }], fields: [ {"path": "valueQuantity.value", "label": "hemoglobin" }] } ]
+    
                     options:
                       type: object
                       properties:
                         model:
                           type: string
-                          example: Keras model JSON
-                        hyperparameters:
-                          type: object
                           example:
-                            num_predictors: 2
-                            num_outcomes: 1
-                            learning_rate: 0.001
-                            validation_split: 0.33
-                            epochs: 5000
-                            batch_size: 10
-                            shuffle: 1
-                            training_metric: l2
-                            validation_metric: acc
+                            class_name: "Sequential"
+                            config:
+                              name: "sequential_1"
+                              layers: ["etc..."]
+                        inputs: 
+                          type: array
+                          items:
+                            type: string
+                          example: ["age", "gender", "hemoglibin"]
+                        outputs: 
+                          type: array
+                          items:
+                            type: string
+                          example: ["deceased"]
+                        optimizer:
+                          type: object
+                          properties:
+                            name: 
+                              type: string
+                              example: "Adam"
+                            parameters:
+                              type: object
+                              example:
+                                learning_rate: 0.001
+                                validation_split: 0.33
+                                epochs: 5000
+                                batch_size: 10
+                                shuffle: 1
+                        compiler:
+                          type: object
+                          properties:
+                            parameters:
+                              type: object
+                              properties:
+                                loss: 
+                                  type: string
+                                  example: "categorical_crossentropy"
+                                metrics:
+                                  type: array
+                                  items:
+                                    type: string
+                                  example: ["accuracy"]
       responses:
         '200':
           description: Model preparation was successfully initiated.
@@ -276,7 +749,7 @@ paths:
       requestBody:
         description: >-
           Optionally, this message may contain a Base64-encoded version of the
-          H5 model weights. If model weights are included, the model will be
+          binary model weights in HDF5 format - refer to the [Keras API documentation - Model.save_weights()](https://keras.io/api/models/model_saving_apis/#saveweights-method). If model weights are included, the model will be
           initialized with these weights prior to training. If model weights are
           not included, model training is started from scratch.
         required: true
@@ -285,22 +758,40 @@ paths:
             schema:
               type: object
               properties:
-                action:
-                  type: string
-                  example: train
-                destination:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: learning
-                data:
+                      example: 1613351895
+                    route:
+                      type: object
+                      properties:
+                        site:
+                          type: string
+                          example: '110'
+                        service:
+                          type: integer
+                          example: learning
+                        task:
+                          type: string
+                          example: train
+                        action:
+                          type: string
+                          example: request
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
                   type: object
                   properties:
-                    job_id:
+                    job:
                       type: string
                       example: 863293a9fd22453e
                     options:
@@ -327,67 +818,125 @@ paths:
             schema:
               type: object
               properties:
-                route:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: learning
-                    action:
-                      type: string
-                      example: progress
-                data:
+                      example: 1613351895
+                    route:
+                      type: object
+                      properties:
+                        site:
+                          type: string
+                          example: '110'
+                        service:
+                          type: integer
+                          example: learning
+                        task:
+                          type: string
+                          example: train
+                        action:
+                          type: string
+                          example: progress
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
                   type: object
                   properties:
-                    job_id:
+                    job:
                       type: string
                       example: 863293a9fd22453e
       responses:
         '200':
-          description: A JSON array of user names
+          description: Model progress was successfully fetched.
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  num_iterations_done:
-                    type: integer
-                    example: 2
-                  num_iterations_total:
-                    type: integer
-                    example: 5000
-                  training_metric:
+                  header: 
                     type: object
                     properties:
-                      name:
-                        type: string
-                        example: l2
-                      values:
-                        type: array
-                        items:
-                          type: number
-                        example:
-                          - 0.4221
-                          - 0.3991
-                  validation_metric:
+                      timestamp:
+                        type: integer
+                        example: 1613351895
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: learning
+                          task:
+                            type: string
+                            example: progress
+                          action:
+                            type: string
+                            example: report
+                      authorization:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                          token:
+                            type: string
+                            example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                  body:
                     type: object
                     properties:
-                      name:
-                        type: string
-                        example: acc
-                      values:
+                      iterations: 
+                        type: object
+                        properties:
+                          done:
+                            type: integer
+                            example: 2
+                          total: 
+                            type: integer
+                            example: 5000
+                      training:
                         type: array
                         items:
-                          type: number
-                        example:
-                          - 0.0511
-                          - 0.1732
+                          type: object
+                          properties:
+                            metric:
+                              type: string
+                              example: accuracy
+                            values:
+                              type: array
+                              items:
+                                type: number
+                              example:
+                                - 0.4221
+                                - 0.3991
+                      validation:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            metric:
+                              type: string
+                              example: accuracy
+                            values:
+                              type: array
+                              items:
+                                type: number
+                              example:
+                                - 0.2311
+                                - 0.2425
   /learning/test:
     post:
-      summary: This message runs testing for a model.
+      summary: This message runs testing for a model that has previously been prepared.
       requestBody:
         description: ''
         required: true
@@ -396,22 +945,40 @@ paths:
             schema:
               type: object
               properties:
-                route:
+                header: 
                   type: object
                   properties:
-                    site:
-                      type: string
-                      example: '110'
-                    destination:
+                    timestamp:
                       type: integer
-                      example: learning
-                    action:
-                      type: string
-                      example: test
-                data:
+                      example: 1613351895
+                    route:
+                      type: object
+                      properties:
+                        site:
+                          type: string
+                          example: '110'
+                        service:
+                          type: integer
+                          example: learning
+                        task:
+                          type: string
+                          example: train
+                        action:
+                          type: string
+                          example: test
+                    authorization:
+                      type: object
+                      properties:
+                        key:
+                          type: string
+                          example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                        token:
+                          type: string
+                          example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                body:
                   type: object
                   properties:
-                    job_id:
+                    job:
                       type: string
                       example: 863293a9fd22453e
                     options:
@@ -420,18 +987,20 @@ paths:
                         weights:
                           type: string
                           example: base64 encoding of binary .h5 model weights file
-                        test_parameters:
+                        split:
                           type: object
                           properties:
-                            num_folds:
+                            folds:
                               type: integer
                               default: 5
-                            folds_strategy:
+                            strategy:
                               type: string
-                              default: k_fold
-                            test_metric:
-                              type: string
-                              default: acc
+                              default: KFold
+                        metrics:
+                          type: array
+                          items:
+                            type: string
+                            default: "accuracy"
       responses:
         '200':
           description: The model ran successfully and the testing results are reported.
@@ -440,18 +1009,58 @@ paths:
               schema:
                 type: object
                 properties:
-                  test_results:
-                    type: array
-                    items:
-                      type: object
-                      properties:
-                        num_fold:
-                          type: integer
-                        fold_size:
-                          type: integer
-                        test_metric_value:
-                          type: number
-                    example:
-                      - num_fold: 1
-                        fold_size: 302
-                        test_metric_value: 0.95
+                  header: 
+                    type: object
+                    properties:
+                      timestamp:
+                        type: integer
+                        example: 1613351895
+                      route:
+                        type: object
+                        properties:
+                          site:
+                            type: string
+                            example: '000'
+                          service:
+                            type: integer
+                            example: learning
+                          task:
+                            type: string
+                            example: progress
+                          action:
+                            type: string
+                            example: report
+                      authorization:
+                        type: object
+                        properties:
+                          key:
+                            type: string
+                            example: 8slPtPjJb12EvBRCrqr8S0WGjmSBxL9GwI1z
+                          token:
+                            type: string
+                            example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9
+                  body:
+                    type: object
+                    properties:
+                      folds:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            num:
+                              type: integer
+                              default: 1
+                            size:
+                              type: integer
+                              default: 302
+                            metrics:
+                              type: array
+                              items:
+                                type: object
+                                properties:
+                                  metric: 
+                                    type: string
+                                    default: "accuracy"
+                                  value:
+                                    type: number
+                                    default: 0.95
