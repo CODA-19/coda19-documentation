@@ -741,7 +741,7 @@ paths:
           description: An error occurred and the model could not be prepared.
   /learning/train:
     post:
-      summary: This message launches training for a job that was previously prepared.
+      summary: Launches training for a job that was previously prepared.
       requestBody:
         description: >-
           Optionally, this message may contain a Base64-encoded version of the
@@ -804,8 +804,8 @@ paths:
   /learning/progress:
     post:
       summary: >-
-        This message fetches training progress for a training or validation job
-        that has previously been launched.
+        Fetches progress for a training or validation job
+        that has previously been started.
       requestBody:
         description: ''
         required: true
@@ -932,7 +932,7 @@ paths:
                                 - 0.2425
   /learning/test:
     post:
-      summary: This message runs testing for a model that has previously been prepared.
+      summary: Runs testing for a model that has previously been prepared.
       requestBody:
         description: ''
         required: true
